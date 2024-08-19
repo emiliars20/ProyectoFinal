@@ -12,6 +12,7 @@
   <style>
     body {
       background-color: rgb(248, 249, 250);
+      background : linear-gradient(90deg, rgba(241,166,54) 11%, rgba(233,137,68) 50%, rgba(185, 107, 35) 100%);
     }
   </style>
 </head>
@@ -19,10 +20,23 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      <div id="titulo">
+        <h1>Comenzar</h1>
+        <h2>Iniciar sesion</h2>
+        <h3>Ingresa tu nombre de usuario y contraseña</h3>
     </div>
+    <form>
+      <div id="login">
+        <form>
+          <label for="usuario">Usuario:</label> <br>
+          <input type="text" id="usuario" name="usuario" required> <br>
+          <label for="pwd">Contraseña: </label> <br>
+          <input type="password" id="pwd" name="pwd" required> <br>
+       </form>
+       <div class="container">
+         <a href="index.html" class="btn btn-outline">Ingresar</a>
+         </div>
+     </div>
   </main>
   <footer class="text-muted">
     <div class="container">
