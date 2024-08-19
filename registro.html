@@ -12,7 +12,7 @@
   <style>
     body {
       background-color: rgb(248, 249, 250);
-      background : linear-gradient(90deg, rgba(241,166,54) 11%, rgba(233,137,68) 50%, rgba(185, 107, 35) 100%);
+      background : linear-gradient(90deg, rgba(241,166,54) 11%, rgba(233,137,68) 50%, rgba(185, 107, 35) 100%)
     }
   </style>
 </head>
@@ -21,22 +21,19 @@
   <main class="mt-5">
     <div class="container">
       <div id="titulo">
-        <h1>Comenzar</h1>
-        <h2>Iniciar sesion</h2>
-        <h3>Ingresa tu email y contraseña</h3>
-    </div>
-    <form id="logeo">
-      <div class="login">
-          <label for="usuario" id="textoform1">Email</label> <br>
-          <input type="text" class="form-control" id="usuario"  required> <br>
-          <label for="password" id="textoform2">Contraseña</label> <br>
-          <input type="password" class="form-control" id="password" required> <br>
-         </div>
+        <h1 id="registro">Registro</h1>
+        <h3 id="p1">Ingresa tu email y contraseña</h3>
+     </div>
+     <form id="signupform">
+     <div class="login">
+         <label for="usuario" id="textoform1">Email</label> <br>
+         <input type="text" class="form-control" id="usuario"  required> <br>
+         <label for="password" id="textoform2">Contraseña</label> <br>
+         <input type="password" class="form-control" id="password" required> <br>
+        </div>
 
-         
-       
-       <div class="container">
-         <button class="btn btn-primary" type="submit" id="regBtn" href="index.html">Ingresar</button>
+      <div class="container">
+        <button class="btn btn-primary" type="submit" id="regBtn" >Registrarme</button>
         </div>
 
         <div class="col s12">
@@ -47,9 +44,13 @@
         </div>
 
         <div class="usuarioNuevo">
-          <p>No tienes una cuenta? <a href="registro.html">Registrate aquí</a> </p>
-          </div>
-        </form>
+            <p> Ya tienes un usuario? <a href="index.html">Logeate aquí</a> </p>
+            </div>
+
+      </form>
+    
+   
+
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -59,7 +60,8 @@
       <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
     </div>
   </footer>
-  <script src="js/login.js"></script>
-</body>
+  <script src="js/registro.js"></script>
+</body>  
+
 
 </html>
