@@ -280,7 +280,7 @@ a.custom-card:hover {
 }
 
 .login-container {
-  background-color: #1f1f1f; /* Fondo del contenedor del formulario */
+  background-color: #f2bf73d0; /* Fondo del contenedor del formulario */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -301,10 +301,17 @@ a.custom-card:hover {
 }
 
 .login-header h2 {
-  font-size: 1rem;
-  color: #b3b3b3; /* Color del subtítulo */
+  font-size: 1.2rem;
+  color: #fff; /* Color del subtítulo */
   margin: 0;
 }
+
+.login-container h3 {
+  font-size: 0.8rem;
+  color: #fff;
+  padding-top: 5px;
+}
+
 
 /* Form Styles */
 #logout {
@@ -324,22 +331,30 @@ form {
 
 label {
   margin-bottom: 0.5rem;
-  color: #e0e0e0; /* Color de las etiquetas */
+  color: #fff; /* Color de las etiquetas */
 }
 
 .login-input {
   font-size: 1rem;
-  border: 1px solid #333;
+  border: none;
   border-radius: 4px;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  background-color: #333;
+  background-color: #8a3d1450;
   color: #fff;
 }
 
+.login-input:focus{
+  background-color: #3d19057e;
+  border: 2px solid #f8ded7;
+  box-shadow: 0 4px 8px rgba(197, 106, 21, 0.89);
+  outline: none;
+}
+
+
 .login-button {
   display: inline-block;
-  background-color: #e50914;
+  background-color: #e63f0c;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -352,7 +367,7 @@ label {
 }
 
 .login-button:hover {
-  background-color: #f40612;
+  background-color: #ff5420;
 }
 
 /* Footer Styles */
@@ -363,7 +378,7 @@ label {
 }
 
 .login-link {
-  color: #e50914;
+  color: #e61a0c;
   text-decoration: none;
 }
 
@@ -371,7 +386,7 @@ label {
   text-decoration: underline;
 }
 
-.login-container h3 {
-  color: white;
-}
 
+/* box-shadow: 0 4px 8px rgba(197, 106, 21, 0.89);
+border: 1px solid #eee8e2;
+*/
