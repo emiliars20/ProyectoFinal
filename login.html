@@ -17,40 +17,28 @@
   </style>
 </head>
 
-<body>
-  <main class="mt-5">
-    <div class="container">
-      <div id="titulo">
+  <main class="login-main">
+    <div class="login-container">
+    <div class="login-header">
         <h1>Comenzar</h1>
         <h2>Iniciar sesion</h2>
         <h3>Ingresa tu email y contraseña</h3>
-    </div>
-    <form id="logeo">
-      <div class="login">
-          <label for="usuario" id="textoform1">Email</label> <br>
-          <input type="text" class="form-control" id="usuario"  required> <br>
-          <label for="password" id="textoform2">Contraseña</label> <br>
-          <input type="password" class="form-control" id="password" required> <br>
-         </div>
-
-         
-       
-       <div class="container">
-         <button class="btn btn-primary" type="submit" id="regBtn" href="index.html">Ingresar</button>
-        </div>
-
-        <div class="col s12">
-          <button id="viewPassword"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="eye-icon">
-            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
-            <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
-         </svg></button>
-        </div>
-
-        <div class="usuarioNuevo">
-          <p>No tienes una cuenta? <a href="registro.html">Registrate aquí</a> </p>
+      </div>
+  
+    <form id="login-form">
+          <label for="usuario" class="usuario">Email</label>
+          <input type="email" id="email-login" class="login-input"required>
+          <label for="password" class="password">Contraseña</label>
+          <input type="password" id="password-login" class="login-input" required>
+          <button type="submit" class="login-button">Ingresar</button>
+          <div class="login-footer">
+            <p>¿No tienes una cuenta? <a href="registro.html" class="login-link">Regístrate aquí</a></p>
           </div>
-        </form>
+    </form>
+  </div>
   </main>
+
+  <!----FOOTER-->
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
