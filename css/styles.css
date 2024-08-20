@@ -308,10 +308,13 @@ a.custom-card:hover {
 
 /* Form Styles */
 #logout {
-  color: black;
-  background-color: #0087F7;
-  display: block;
+  text-decoration: none
 }
+
+#logout:hover {
+  background-color: #c82333;
+}
+
 
 
 form {
