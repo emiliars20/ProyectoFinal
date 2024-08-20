@@ -271,132 +271,104 @@ a.custom-card:hover {
   border-top: 1px solid #ddd; /* Borde superior para separar el texto del resto del contenido */
 }
 
-/* CSS DE LOGIN Y REGISTRO*/
-
-#titulo {
-  text-align: center;
-  font-family: 'Roboto Serif';
-  color: rgb(74,70,70);
-}
-
-#login {
+/* General Styles for the Login Container */
+.login-main {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #1f1f1f; /* Fondo del contenedor del formulario */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Header Styles */
+.login-header {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-#comenzar{
-          font-family: 'Roboto Serif';
-          color: rgb(74,70,70);
-          font-size: 48px;
-          font-weight: bold;
-          position: absolute;
-          top: 122px; 
-          left:588px;
-        }
-#inicio{font-family: 'Roboto Serif';
-          color: rgb(74,70,70);
-          font-size: 36px;
-          position: absolute;
-          top: 187px; 
-          left:604px;}
-
-#p1{font-family: 'Roboto Serif';
-         color: rgb(74,70,70);
-          font-size: 20px;
-          position: absolute;
-          top: 246px; 
-          left:517px;}
-
-.login{font-family: 'Roboto Serif';
-        font-size: 24px;
-        align-items: center;
-        background-color: rgb(242,191,115);
-        height: 590px;
-        width: 878px;
-        justify-content: center;
-        border-radius: 50px;
-        position: absolute;
-          top: 312px; 
-          left:281px;
-      }
-
-h1{
-        font-size: 48px;
-        font-weight: bold;
-        position: absolute;
-        top:150px; 
-        left:588px;
-      }
-
-.form-control{font-family: 'Roboto';
-              font-size: 35px;
-              border: 3px solid rgb(253,235,79);
-              background-color: rgb(251,233,186);
-              height: 87px;
-              width: 679px;
-              align-items: center;
-              justify-content: center;
-              margin-left: auto;
-              margin-right: auto;
-              position: relative;
-              top: 116px; 
-              left: 0px;
-              }
-
-
-#textoform1{ font-family: 'Roboto Serif';
-  position:relative;
-  top: 110px;
-  left: 98px;
+.login-header h1 {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #fff; /* Color del título principal */
 }
 
-#textoform2{ font-family: 'Roboto Serif';
-  position:relative;
-  top: 100px;
-  left: 98px;
+.login-header h2 {
+  font-size: 1rem;
+  color: #b3b3b3; /* Color del subtítulo */
+  margin: 0;
 }
 
-#regBtn {font-family: 'Roboto';
-  font-size: 32px;
-  color:black;
-  background-color: rgb(253,235,79);
-  border: 3px solid rgb( 253,253,253);
-  border-radius: 40px;
-  height: 57px;
-  width: 285px;
-  position: absolute;
-        top: 799px; 
-        left: 563px;
+/* Form Styles */
+#logout {
+  color: black;
+  background-color: #0087F7;
+  display: block;
 }
 
-#viewPassword{
-  display: inline-flex;
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #e0e0e0; /* Color de las etiquetas */
+}
+
+.login-input {
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.login-button {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  border: 0px solid rgb(251,233,186);
-  position:absolute;
-        top: 655px;
-        right: 350px;
+  transition: background-color 0.3s ease;
 }
 
-#regBtn:hover{ background-color: rgb(255,157,10);
-  border:3px solid black;
+.login-button:hover {
+  background-color: #f40612;
 }
 
-.eye-icon{
-  width: 30px;
-  height: 30px;
-  color: grey
+/* Footer Styles */
+.login-footer {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
 }
 
-.text-muted{  
-  position:relative;
-        top: 655px;
+.login-link {
+  color: #e50914;
+  text-decoration: none;
 }
 
-.usuarioNuevo{
-  position:relative;
-        top: 830px;
-        left: 430px;
-      }
+.login-link:hover {
+  text-decoration: underline;
+}
 
+.login-container h3 {
+  color: white;
+}
 
