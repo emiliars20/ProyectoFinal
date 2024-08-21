@@ -19,7 +19,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         if(!validUser){
             return alert ("Usuario y/o contraseña incorrectos");
         }
-        alert ("¡Hola es un placer tenerte por aquí!");
+        alert ("¡Hola es un placer tenerte por acá!");
        
       localStorage.setItem('login_success', JSON.stringify(validUser));
        window.location.href = "index.html"
