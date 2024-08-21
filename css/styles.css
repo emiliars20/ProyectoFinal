@@ -271,6 +271,35 @@ a.custom-card:hover {
   border-top: 1px solid #ddd; /* Borde superior para separar el texto del resto del contenido */
 }
 
+/*Boton logout*/
+#logout{
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5420;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#logout:hover{
+  background-color: #e63f0c;
+}
+
+/*Ubicacion de perfil y logout*/
+
+#auth-links {
+  display: flex;
+  align-items: center; 
+  padding-right: 15px;
+}
+
+#auth-links .nav-link {
+  margin-left: 15px; 
+}
+
+#auth-links .nav-link:last-child { /*elimina el margen del ultimo elemento*/
+  margin-right: 0;
+}
+
 /* General Styles for the Login Container */
 .login-main {
   display: flex;
@@ -314,15 +343,6 @@ a.custom-card:hover {
 
 
 /* Form Styles */
-#logout {
-  text-decoration: none
-}
-
-#logout:hover {
-  background-color: #c82333;
-}
-
-
 
 form {
   display: flex;
@@ -344,11 +364,19 @@ label {
   color: #fff;
 }
 
-.login-input:focus{
+.login-input:focus{  /*estilos al hacer clic en el campo*/
   background-color: #3d19057e;
   border: 2px solid #f8ded7;
-  box-shadow: 0 4px 8px rgba(197, 106, 21, 0.89);
+  box-shadow: 0 4px 4px rgba(197, 106, 21, 0.89);
   outline: none;
+}
+
+.login-input::placeholder{    /*color de letra de placeholder*/
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-input:focus::placeholder {  /*color de letra de placeholder al hacer clic en el campo*/
+  color: rgba(255, 255, 255, 0.4);
 }
 
 
@@ -386,7 +414,3 @@ label {
   text-decoration: underline;
 }
 
-
-/* box-shadow: 0 4px 8px rgba(197, 106, 21, 0.89);
-border: 1px solid #eee8e2;
-*/
