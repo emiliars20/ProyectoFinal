@@ -271,7 +271,7 @@ a.custom-card:hover {
   border-top: 1px solid #ddd; /* Borde superior para separar el texto del resto del contenido */
 }
 
-/*Boton logout*/
+/*-----------------Boton logout------------------------*/
 #logout{
   text-decoration: none;
   color: #fff;
@@ -284,7 +284,7 @@ a.custom-card:hover {
   background-color: #e63f0c;
 }
 
-/*Ubicacion de perfil y logout*/
+/*---------------Ubicacion de perfil y logout----------------------*/
 
 #auth-links {
   display: flex;
@@ -300,7 +300,7 @@ a.custom-card:hover {
   margin-right: 0;
 }
 
-/* General Styles for the Login Container */
+/* ----------Estilos generales para Login Container -----------*/
 .login-main {
   display: flex;
   justify-content: center;
@@ -342,7 +342,7 @@ a.custom-card:hover {
 }
 
 
-/* Form Styles */
+/*------------- Form ------------------*/
 
 form {
   display: flex;
